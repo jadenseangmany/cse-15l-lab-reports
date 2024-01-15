@@ -22,9 +22,9 @@
 **Let's start with working from the ~ directory.**
 
 ### Example of command with no arguments:
-* `cd` does nothing and outputs nothing as it does not change any directory. This is not an error. (Still in the `~` directory)\
-* `ls` prints `lecture1` as it lists the files and folders in the current working directory. Without doing any changes in directory, the commandline stays in the ~ directory, which encompasses `lecture1`. This is not an error. (`~` directory)\
-* `cat` by itself opens a line where if you enter anything into the terminal it echoes what is written. For example, after entering `cat` in the terminal, a new line pops up and when if I enter `practice!` into the terminal, it prints out `practice!`. You can use this to create small text files through the terminal, by typing `cat > file.txt` then the text that you would type would be created into that file. This is not an error. (Still in the `~` directory)\
+* `cd` does nothing and outputs nothing as it does not change any directory. This is not an error. (Still in the `~` directory)
+* `ls` prints `lecture1` as it lists the files and folders in the current working directory. Without doing any changes in directory, the commandline stays in the ~ directory, which encompasses `lecture1`. This is not an error. (`~` directory)
+* `cat` by itself opens a line where if you enter anything into the terminal it echoes what is written. For example, after entering `cat` in the terminal, a new line pops up and when if I enter `practice!` into the terminal, it prints out `practice!`. You can use this to create small text files through the terminal, by typing `cat > file.txt` then the text that you would type would be created into that file. This is not an error. (Still in the `~` directory)
 
 ### Example of using the command with a path to a directory as an argument:
 * `cd lecture1` changes the terminal directory into the directory `lecture1`. It doesn't output anything, because it's job is to change the directory. Now we are in the `lecture1` directory, this is not an error.
