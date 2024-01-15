@@ -34,7 +34,7 @@
 ### Example of using the command with a path to a file as an argument
 * `cd Hello.java` prints out an error `bash: cd: Hello.java: Not a directory` because `cd` is only used to change directories, and `Hello.java` is a file. If you try to change directories into a file, it won't work because a file isn't a directory and does not have any contents of other files within it. We are still in the `lecture1` directory, and this is an error because you cannot change directories into a file.
 * `ls Hello.class` prints out `Hello.class` and effectively echoes the file name. This is because it lists out files within a directory that you input it to, similar to cat, but without combining the contents of a file. When you input a file as an argument, it lists out that file. So inputting `Hello.class` would simply print out the only file, and that is `Hello.class`. We are in the `lecture1` directory and this is not an error.
-* `cat Hello.java README` prints out 
+* `cat Hello.java README` prints out:
 ```
 import java.io.IOException; // starting from this line, this is the contents of the Hello.java file
 import java.nio.charset.StandardCharsets;
