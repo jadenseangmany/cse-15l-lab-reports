@@ -60,6 +60,7 @@
 
 ### Example of using the command with a path to a file as an argument
 * ```
+  [user@sahara ~/lecture1]$ cd Hello.java
   bash: cd: Hello.java: Not a directory
   [user@sahara ~/lecture1]$
   ```
