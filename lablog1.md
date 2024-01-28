@@ -88,26 +88,24 @@
   java Hello messages/en-us.txt
   [user@sahara ~/lecture1]$ 
   ```
-`cat Hello.java README` prints out:
+  `cat Hello.java README` prints out:
 
 
-```
-import java.io.IOException; // starting from this line, this is the contents of the Hello.java file
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-
-public class Hello {
-  public static void main(String[] args) throws IOException {
-    String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
-    System.out.println(content);
-  }
-}To use this program: // starting from this line, this is the contents of the README file
-
-javac Hello.java
-java Hello messages/en-us.txt`
-```
-
-
-   The command I just entered combines (or concatenates) the `Hello.java` file and the `README` files, then prints it out, which is why it printed out the contents of both of those files. I added comments on the lines that started printing out the contents of the corresponding files. It can print out any amount of files when specified. We are still in the `lecture1` directory, and this is not an error.
+  ```
+  import java.io.IOException; // starting from this line, this is the contents of the Hello.java file
+  import java.nio.charset.StandardCharsets;
+  import java.nio.file.Files;
+  import java.nio.file.Path;
+  
+  public class Hello {
+    public static void main(String[] args) throws IOException {
+      String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
+      System.out.println(content);
+    }
+  }To use this program: // starting from this line, this is the contents of the README file
+  
+  javac Hello.java
+  java Hello messages/en-us.txt`
+  ```
+  The command I just entered combines (or concatenates) the `Hello.java` file and the `README` files, then prints it out, which is why it printed out     the contents of both of those files. I added comments on the lines that started printing out the contents of the corresponding files. It can print out   any amount of files when specified. We are still in the `lecture1` directory, and this is not an error.
 
