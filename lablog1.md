@@ -22,19 +22,73 @@
 **Let's start with working from the ~ directory.**
 
 ### Example of command with no arguments:
-* `cd` does nothing and outputs nothing as it does not change any directory. `cd` is used to change directory, so when it isn't specified what directory to change it to, it just stays in the same directory. This is not an error. (Still in the `~` directory)
-* `ls` prints `lecture1` as it lists the files and folders in the current working directory. Without doing any changes in directory, the commandline stays in the ~ directory, which encompasses `lecture1`. This is not an error. (`~` directory)
-* `cat` by itself opens a line where if you enter anything into the terminal it echoes what is written. For example, after entering `cat` in the terminal, a new line pops up and when if I enter `practice!` into the terminal, it prints out `practice!`. You can use this to create small text files through the terminal, by typing `cat > file.txt` then the text that you would type would be created into that file. This is not an error. (Still in the `~` directory)
+* ```
+  [user@sahara ~]$ cd
+  [user@sahara ~]$
+  ```
+     `cd` in the home directory does nothing, outputs nothing, and does not change directory. However, when `cd` is used in the `lecture1` directory, it changes back to the home directory. Therefore, `cd` is used to change directory, so when it isn't specified what directory to change it to, it goes back to the home directory. This is not an error. (Still in the `~` directory)
+* ```
+  [user@sahara ~]$ ls
+  lecture1
+  [user@sahara ~]$
+  ```
+  `ls` prints `lecture1` as it lists the files and folders in the current working directory. Without doing any changes in directory, the commandline stays in the ~ directory, which encompasses `lecture1`. This is not an error. (`~` directory)
+* ```
+  [user@sahara ~]$ cat
+
+  ```
+  `cat` by itself opens a line where if you enter anything into the terminal it echoes what is written. For example, after entering `cat` in the terminal, a new line pops up and when if I enter `practice!` into the terminal, it prints out `practice!`. You can use this to create small text files through the terminal, by typing `cat > file.txt` then the text that you would type would be created into that file. This is not an error. (Still in the `~` directory)
 
 ### Example of using the command with a path to a directory as an argument:
-* `cd lecture1` changes the terminal directory into the directory `lecture1`. It doesn't output anything, because it's job is to change the directory. Now we are in the `lecture1` directory, this is not an error.
-* `ls messages` prints out `en-us.txt  es-mx.txt  ja.txt  zh-cn.txt` which are the files that are in the directory of messages (`ja.txt` is the japanese translation of hello world that I created). Now that we are in the `lecture1` directory, the terminal can access the directory of messages which allows it to list out all those files. This is not an error.
-* `cat messages` prints out `cat: messages: Is a directory` because there isn't really anything for the terminal to concatenate. This is not an error, and we are still in the `lecture1` directory.
+* ```
+  [user@sahara ~]$ cd lecture1
+  [user@sahara ~/lecture1]$
+  ```
+   `cd lecture1` changes the terminal directory into the directory `lecture1`. It doesn't output anything, because it's job is to change the directory.       Now we are in the `lecture1` directory, this is not an error.
+* ```
+  [user@sahara ~/lecture1]$ ls messages
+  en-us.txt  es-mx.txt  ja.txt  zh-cn.txt
+  [user@sahara ~/lecture1]$
+  ```
+  `ls messages` prints out `en-us.txt  es-mx.txt  ja.txt  zh-cn.txt` which are the files that are in the directory of messages (`ja.txt` is the japanese translation of hello world that I created). Now that we are in the `lecture1` directory, the terminal can access the directory of messages which allows it to list out all those files. This is not an error.
+* ```
+  [user@sahara ~/lecture1]$ cat messages
+  cat: messages: Is a directory
+  [user@sahara ~/lecture1]$
+  ```
+  `cat messages` prints out `cat: messages: Is a directory` because there isn't really anything for the terminal to concatenate. This is actually an error because `cat` is used to print the contents of an input file, but since it did not do its intended purpose, it is an error. We are still in the `lecture1` directory.
 
 ### Example of using the command with a path to a file as an argument
-* `cd Hello.java` prints out an error `bash: cd: Hello.java: Not a directory` because `cd` is only used to change directories, and `Hello.java` is a file. If you try to change directories into a file, it won't work because a file isn't a directory and does not have any contents of other files within it. We are still in the `lecture1` directory, and this is an error because you cannot change directories into a file.
-* `ls Hello.class` prints out `Hello.class` and effectively echoes the file name. This is because it lists out files within a directory that you input it to, similar to cat, but without combining the contents of a file. When you input a file as an argument, it lists out that file. So inputting `Hello.class` would simply print out the only file, and that is `Hello.class`. We are in the `lecture1` directory and this is not an error.
-* `cat Hello.java README` prints out:
+* ```
+  bash: cd: Hello.java: Not a directory
+  [user@sahara ~/lecture1]$
+  ```
+   `cd Hello.java` prints out an error `bash: cd: Hello.java: Not a directory` because `cd` is only used to change directories, and `Hello.java` is a file. If you try to change directories into a file, it won't work because a file isn't a directory and does not have any contents of other files within it. We are still in the `lecture1` directory, and this is an error because you cannot change directories into a file.
+* ```
+  [user@sahara ~/lecture1]$ ls Hello.class
+  Hello.class
+  [user@sahara ~/lecture1]$ 
+  ```
+  `ls Hello.class` prints out `Hello.class` and effectively echoes the file name. This is because it lists out files within a directory that you input it to, similar to cat, but without combining the contents of a file. When you input a file as an argument, it lists out that file. So inputting `Hello.class` would simply print out the only file, and that is `Hello.class`. We are in the `lecture1` directory and this is not an error.
+* ```
+  [user@sahara ~/lecture1]$ cat Hello.java README 
+  import java.io.IOException;
+  import java.nio.charset.StandardCharsets;
+  import java.nio.file.Files;
+  import java.nio.file.Path;
+  
+  public class Hello {
+    public static void main(String[] args) throws IOException {
+      String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
+      System.out.println(content);
+    }
+  }To use this program:
+  
+  javac Hello.java
+  java Hello messages/en-us.txt
+  [user@sahara ~/lecture1]$ 
+  ```
+`cat Hello.java README` prints out:
 
 
 ```
@@ -55,5 +109,5 @@ java Hello messages/en-us.txt`
 ```
 
 
-   The command I just entered combines (or concatenates) the `Hello.java` file and the `README` files, then prints it out, which is why it printed out the contents of both of those files. It can print out any amount of files when specified. We are still in the `lecture1` directory, and this is not an error.
+   The command I just entered combines (or concatenates) the `Hello.java` file and the `README` files, then prints it out, which is why it printed out the contents of both of those files. I added comments on the lines that started printing out the contents of the corresponding files. It can print out any amount of files when specified. We are still in the `lecture1` directory, and this is not an error.
 
