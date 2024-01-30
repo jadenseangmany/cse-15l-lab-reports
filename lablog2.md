@@ -1,5 +1,5 @@
 # Lab Blog 3
-## ChatServer
+## Part 1: ChatServer
 ### ChatServer code:
 The following is code for the ChatServer, which takes in a username and a message and outputs and saves the username and message into a webserver.
 ```
@@ -65,3 +65,45 @@ class ChatServer {
 }
 ```
 ### Screenshots of /add-message
+Here is an image of /add-message with two messages.
+![Screenshot with two messages](images/TwoMessages.png)
+* Which methods of the code are called?
+    * In order to create this, I added `/add-message?s=Hi&user=Loaf` then `/add-message?s=sup&user=Lemon` to the end of the url. This calls the         `handleRequest` method.
+* What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+    * Relevant argument: `url`: An instance of URI representing the full request URL. In this case, the path is `/add-message` and the query is `s=Hi&user=Loaf` and `s=sup&user=Lemon`.
+    * Relevant field: `chatHistory`: A StringBuilder instance that holds the history of chat messages. We can assume that the value is initially empty `("")`.
+* How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+    * In the `chatHistory` field, before the request, the value is assumed to be empty `("")`. But, after processing this request, if this is the first message, `chatHistory` will change to `"Loaf: Hi\n"`.
+
+
+Here is an image of /add-message with four messages.
+![Screenshot with four messages](images/updog.png)
+For the first request, which is the first message in the chat (the "loaf: yo dyk the answers to quiz 4")
+* Which methods of the code are called?
+    * Simarily, we added the path `/add-message?s=yo dyk the answers to quiz 4?&user=loaf` then added the path `/add-message?s=yuh it's updog&user=Lemon`.
+    *  the Methods Called are:
+        * `handleRequest(URI url)`
+        * `parseQuery(String query)`
+* What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+    * For the `handleRequest(URI url)`: `url`: Represents the `URI` `/add-message?s=yo dyk the answers to quiz 4?&user=loaf`.
+    `chatHistory`: A `StringBuilder` instance holding the history of chat messages. Like in the previous example, we assume initially it's empty `("")`.
+    * For the `parseQuery(String query)`: `query`: The string `"s=yo dyk the answers to quiz 4?&user=loaf"`.
+ 
+* How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+    * `queryParams (local variable inside parseQuery)`: After parsing, it holds `{"s": "yo dyk the answers to quiz 4?", "user": "loaf"}`.
+    * `chatHistory (class field)`: Changes from `""` to `"loaf: yo dyk the answers to quiz 4?\n"`.
+
+For the second, third, and fourth requests, we follow a similar structure. In summary, for each request:
+
+* The `handleRequest` and `parseQuery` methods are called
+* The URI and the query part of the URI are processed, extracting the `user` and `s` (message) parameters
+* The `chatHistory` class field is updated by appending the new message, preserving the chat history and adding the new user-message pair on a new line.
+
+## Part 2: SSH Keygen
+
+* The absolute path to the private key for your SSH key for logging into ieng6 (on your computer, an EdStem workspace, or on the home directory of the lab computer)
+    * /Users/rain/.ssh/id_rsa
+The absolute path to the public key for your SSH key for logging into ieng6 (this is the one you copied to your account on ieng6, so it should be a path on ieng6's file system)
+    * /Users/rain/.ssh/id_rsa.pub
+A terminal interaction where you log into your ieng6 account without being asked for a password.
+![Logging in without password](
