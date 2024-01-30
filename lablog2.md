@@ -1,4 +1,4 @@
-# Lab Blog 3
+# Lab Blog 2
 ## Part 1: ChatServer
 ### ChatServer code:
 The following is code for the ChatServer, which takes in a username and a message and outputs and saves the username and message into a webserver.
@@ -102,8 +102,12 @@ For the second, third, and fourth requests, we follow a similar structure. In su
 ## Part 2: SSH Keygen
 
 * The absolute path to the private key for your SSH key for logging into ieng6 (on your computer, an EdStem workspace, or on the home directory of the lab computer)
-    * /Users/rain/.ssh/id_rsa
-The absolute path to the public key for your SSH key for logging into ieng6 (this is the one you copied to your account on ieng6, so it should be a path on ieng6's file system)
-    * /Users/rain/.ssh/id_rsa.pub
-A terminal interaction where you log into your ieng6 account without being asked for a password.
-![Logging in without password](
+    * `/Users/rain/.ssh/id_rsa`
+* The absolute path to the public key for your SSH key for logging into ieng6 (this is the one you copied to your account on ieng6, so it should be a path on ieng6's file system)
+    * `/home/linux/ieng6/oce/7e/jseangmany/.ssh/id_rsa.pub`
+* A terminal interaction where you log into your ieng6 account without being asked for a password:
+    ![Logging in without password](images/NoPassword.png)
+
+  ## Part 3: What I learned
+
+So I learned about hash maps by doing this; which I heard about previously, but this is my first time attempting to actually use it for something. I knew a lot about dictionaries in Python (as I'm more comfortable with Python than java), so I never knew that a hash map was actually just the same as a Python dictionary. It was helpful in writing the code for the chat server and made things easier for me. In terms of web server stuff, it was really nice to know about the parts of a url (like the query and paths) and it was nice to get muscle memory on how to use the terminal quickly. I've been using the tab key a lot when running terminal commands, and I loved the nice and relaxing exploration of paths on my computer. So overall, I learned about hash maps, what the purpose of each part of a url is, and muscle memory for running and starting servers on a terminal.
