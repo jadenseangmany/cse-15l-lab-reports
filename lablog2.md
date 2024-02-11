@@ -103,8 +103,9 @@ For the second, third, and fourth requests, we follow a similar structure. In su
 
 * The absolute path to the private key for your SSH key for logging into ieng6 (on your computer, an EdStem workspace, or on the home directory of the lab computer)
     * `/Users/rain/.ssh/id_rsa`
+    * ![public key](images/publickeyss.png)
 * The absolute path to the public key for your SSH key for logging into ieng6 (this is the one you copied to your account on ieng6, so it should be a path on ieng6's file system)
-    * `/home/linux/ieng6/oce/7e/jseangmany/.ssh/id_rsa.pub`
+    * `/home/linux/ieng6/oce/7e/jseangmany/.ssh/authorized_keys`
 * A terminal interaction where you log into your ieng6 account without being asked for a password:
     ![Logging in without password](images/NoPassword.png)
 
