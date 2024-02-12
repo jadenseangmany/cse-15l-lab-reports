@@ -30,5 +30,7 @@ Here, the failure inducing input is really any value other than an input array o
 ```
 The code is broken so that only an empty array would work, so this input of {0,0,0} actually runs successfully and does not induce a failure.
 ### Symptom
+![Symptom](images/symptoms-lab3.png)
+Here is what happens when I try to run the test. There is one failure and one pass, where the failure is when I input the {1,2,3} array.
 
 
