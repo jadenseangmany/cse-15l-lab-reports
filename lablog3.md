@@ -34,7 +34,7 @@ The code is broken so that only an empty array would work, so this input of {0,0
 Here is what happens when I try to run the test. There is one failure and one pass, where the failure is when I input the {1,2,3} array.
 ### Before and After
 Before:
-!
+![Before](/images/before.png)
 After:
-!
+![After](/images/after.png)
 
