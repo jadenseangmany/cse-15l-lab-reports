@@ -94,8 +94,355 @@ After:
 
 ### Invert match with `-v`
 
-  1..
-  2..
+  1.
+
+  ```
+(base) rain@Rains-MacBook-Air 911report % grep -v "a" chapter-6.txt
+
+    
+        
+            FROM THREAT TO THREAT
+            
+            
+            
+            THE MILLENNIUM CRISIS
+            
+            
+            
+            
+                    Deek.
+            
+            
+            
+            
+            
+            
+                    countries.
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                    ferry.
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                independent.
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                    Angeles.
+            
+            
+            POST-CRISIS REFLECTION: AGENDA FOR 2000
+            
+                    home.
+            
+            
+            
+                did not.
+            
+            
+            
+            
+            
+                trip to the region.
+            
+            
+            
+            
+            
+            
+            
+                    counterterrorism.
+            
+            
+                    unit]."
+            
+            
+            Berger met twice with Tenet in April to try to resolve the dispute. The Deputies
+            
+                    frozen.
+            
+            
+            
+                terrorist funding.
+            
+            
+            
+            
+                    flows.
+            
+            
+            
+                of Congress.
+            
+            
+            Border Security
+            
+            They included 
+            
+                
+                        proceedings;
+                
+                        terrorism;
+                
+                
+            
+            
+                        origin.
+                
+            
+            
+            
+            
+            
+            
+                    risky.
+            
+            
+            
+            
+            
+            
+            
+            
+                    out.
+            
+            
+            
+            
+            
+            
+            
+            THE ATTACK ON THE USS COLE
+            
+            
+                    Aden.
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                more well-known.
+            
+            
+            
+            
+            
+            
+            
+                directed the bombing.
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            CHANGE AND CONTINUITY
+                president in 2001.
+            From the Old to the New
+            
+            
+            
+            
+                    process.
+            
+            
+            
+                the NSC.
+            
+            
+            
+                Counterterrorism Security Group functioned.
+            
+            
+            
+            
+            
+            
+            
+            
+                    responses." Before Vice President Cheney visited the
+                responsible" for the Cole.
+            
+            
+            
+                    this.
+            
+            
+                    CIA.
+            
+                the review very soon.
+            
+            
+                (NSPD) on terrorism.
+            
+            
+            
+            
+            
+                    terrorism.
+            
+            THE NEW ADMINISTRATION'S APPROACH
+            
+            
+            
+            
+                policy process did not follow through quickly enough.
+            
+            
+            
+                    2006.
+            
+                expressed it to her, Rice told us.
+            
+            
+            
+            
+            
+            
+            
+            
+                    concluded.
+            
+            
+                    victory.
+            
+            
+            
+            
+            
+                    Berger.
+            
+            
+            
+            
+            
+            
+            
+                rights to fly over neighboring countries.
+            
+            
+                this mission," Rice told us.
+            
+            
+            
+            
+            
+            
+                Robert Mueller, took office just before 9/11. The
+            
+            
+            
+            
+            
+                this concern.
+            
+            
+            
+                    he.
+            
+                moving vehicle.
+            
+                    herself.
+            
+                on these issues.
+            
+            
+                Jumper told us, problems with the equipment persisted. Nevertheless, the Air Force
+                    this."
+            
+            September 2001
+            
+            
+                be in order[.]"
+            
+            
+                Rice, Tenet, Rumsfeld, or someone else would give the order to fire.
+            
+                with little discussion.
+            
+                    work.
+            
+                spring of 2002.
+            
+            
+            
+            
+            
+            
+            
+            
+  ```
+
+  Explanation: Here, I used the -v option, which returns all the lines that do not match the pattern I provide. In this example, I provided the pattern "a", so grep returned all the lines that do not have the letter "a". This could be useful when looking for more broad strings that filters out things that we don't want.
+
+  2. 
+  
+  ```
+(base) rain@Rains-MacBook-Air Env_Prot_Agen % grep -v "e" tech_sectiong.txt
+
+
+
+
+
+
+
+banking.
+
+
+
+
+
+
+acidic � not acidic.
+
+
+
+and without updating.
+  ```
+  Explanation: In this example, we returned all the lines that do not have the letter "e" in the `tech_sectiong.txt` file. As e is the most common vowel, we notice that there were not much lines with text returned, which creates a very interesting output.
 
 ### Show line number with `-n`
 
