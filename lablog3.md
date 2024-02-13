@@ -34,8 +34,24 @@ The code is broken so that only an empty array would work, so this input of {0,0
 Here is what happens when I try to run the test. There is one failure and one pass, where the failure is when I input the {1,2,3} array.
 ### Before and After
 Before:
-![Before](/images/before.png)
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
 
 After:
-![After](/images/after.png)
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+```
 
