@@ -446,12 +446,86 @@ and without updating.
 
 ### Show line number with `-n`
 
-  1..
-  2..
+  1.
+
+  ```
+  (base) rain@Rains-MacBook-Air Env_Prot_Agen % grep -n "public" tech_sectiong.txt
+15:Developed by ICF Resources Incorporated and used to support public
+239:• The Model assumes public and private companies seek the same
+241:areas where there are large amounts of public power.
+  ```
+  Explanation: In this example, we returned all the lines with "public" and it also includes the line number of where the lines are in the file. This is useful when we want to know where these lines were found.
+
+  2.
+
+  ```
+  (base) rain@Rains-MacBook-Air Env_Prot_Agen % grep -n "power" tech_adden.txt   
+13:In the United States, power generation is responsible for 63% of
+19:from power generation emissions include:
+64:environmental problems caused by power generation, there is a need
+69:Initiative, a proposal to reduce emissions from electric power
+92:remaining environmental and health problems associated with power
+181:assumption, because fine particles from power plant emissions are
+392:from all sectors, including power.
+412:Planning Model (IPM). IPM projects power sector emissions under
+420:mercury emissions from power generation. The emissions inventory
+441:(i.e. least cost) approach to operating the electric power
+976:have greater statistical power to detect effects. More recent
+  ```
+  Explanation: In this example, we returned all the lines with the pattern "power" as well as the line number that it was found in. If I wanted to know which line numbers "power" was in, this is where the `-n` command comes in as very useful.
 
 ### Highlight matches with `--color` and `less -R`
 
-  1..
-  2..
+  1. 
+
+  ```
+  (base) rain@Rains-MacBook-Air Env_Prot_Agen % grep --color=always "power" tech_adden.txt | less -R
+In the United States, power generation is responsible for 63% of
+from power generation emissions include:
+environmental problems caused by power generation, there is a need
+  Initiative, a proposal to reduce emissions from electric power
+remaining environmental and health problems associated with power
+assumption, because fine particles from power plant emissions are
+from all sectors, including power.
+Planning Model (IPM). IPM projects power sector emissions under
+mercury emissions from power generation. The emissions inventory
+(i.e. least cost) approach to operating the electric power
+have greater statistical power to detect effects. More recent
+(END)
+  ```
+  Explanation: Here, the text that says "power" is actually colored in red as seen in the screenshots below. The `--color` and `less -R` commands highlight the pattern that I want in red so it's easy to find and see what we are looking for.
+  
+
+  2.
+
+  ```
+  (base) rain@Rains-MacBook-Air Env_Prot_Agen % grep --color=always "%" nov1.txt | less -R
+  consumers' electricity rates by as much as 50%, which we believe is
+During this time, gross domestic product has increased almost 160%.
+pollutants by 29%, while coal consumption has increased 77% and
+energy consumption has increased 45%. Eleven years ago President
+scrubber costs decreased by approximately 40% and scrubber sulfur
+removal efficiencies improved from 90% to 95%, and experimentation
+67% of sulfur dioxide emissions, 25% of nitrogen oxide emissions,
+and 37% of mercury emissions in the United States.
+20-30% decline of coal generation and a 30-50% increase in
+The 90% source-specific control for mercury is also problematic.
+power plant would be able to achieve 90% source-specific controls
+(END)
+  ```
+  Explanation: In this example, I put the pattern as "%", so I could see where all the % signs are easily since they are highlighted in red, as seen as on the pictures below.
+
+
+Screenshots with highlighted text:
+
+Example 1:
+
+![Example 1](images/example1.png)
+
+Example 2:
+
+![Example 2](images/example2.png)
+
+
 
 
