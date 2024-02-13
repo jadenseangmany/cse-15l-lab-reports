@@ -54,4 +54,26 @@ After:
     return newArray;
   }
 ```
+## Part 2: Researching Commands
+
+### Search for multiple patterns with `-e`
+
+  1. 
+  2. 
+
+### Invert match with `-v`
+
+  1..
+  2..
+
+### Show line number with `-n`
+
+  1..
+  2..
+
+### Highlight matches with `--color` and `less -R`
+
+  1..
+  2..
+
 
