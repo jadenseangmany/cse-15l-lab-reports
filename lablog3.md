@@ -10,7 +10,7 @@
     return arr;
   }
 ```
-Here I chose the method "reversed" whwere it's supposed to reverse an array given any amount of array. For example, an array of {1,2,3} is supposed to return {3,2,1}.
+Here I chose the method "reversed" where it's supposed to reverse an array given any length of an array. For example, an array of {1,2,3} is supposed to return {3,2,1}.
 ### Faliure Inducing Input:
 ```
 @Test
@@ -35,6 +35,7 @@ Here is what happens when I try to run the test. There is one failure and one pa
 ### Before and After
 Before:
 ![Before](/images/before.png)
+
 After:
 ![After](/images/after.png)
 
