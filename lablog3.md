@@ -74,7 +74,7 @@ After:
                 and lightly governed frontier provinces. As of July 2004, Bin Ladin and Zawahiri are
 ```
 
-  Explanation: Here, I used the -e option to specify multiple search patterns. I used the patterns "Bin Ladin" and "Obama" to find all the lines that match with "Bin Ladin" and "Obama". It's useful to search for multiple things at the same time, so I don't have to do two separate searches.
+  Explanation: Here, I used the `-e` option to specify multiple search patterns. I used the patterns "Bin Ladin" and "Obama" to find all the lines that match with "Bin Ladin" and "Obama". It's useful to search for multiple things at the same time, so I don't have to do two separate searches.
 
 Source:
 
@@ -424,7 +424,7 @@ https://www.geeksforgeeks.org/grep-command-in-unixlinux/
             
   ```
 
-  Explanation: Here, I used the -v option, which returns all the lines that do not match the pattern I provide. In this example, I provided the pattern "a", so grep returned all the lines that do not have the letter "a". This could be useful when looking for more broad strings that filters out things that we don't want.
+  Explanation: Here, I used the `-v` option, which returns all the lines that do not match the pattern I provide. In this example, I provided the pattern "a", so grep returned all the lines that do not have the letter "a". This could be useful when looking for more broad strings that filters out things that we don't want.
 
 Source:
 
@@ -470,7 +470,7 @@ https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 239:• The Model assumes public and private companies seek the same
 241:areas where there are large amounts of public power.
   ```
-  Explanation: In this example, we returned all the lines with "public" and it also includes the line number of where the lines are in the file. This is useful when we want to know where these lines were found.
+  Explanation: In this example, the `-n` option returns all the lines with "public" and it also includes the line number of where the lines are in the file. This is useful when we want to know where these lines were found.
 
 Source:
 
@@ -517,7 +517,7 @@ mercury emissions from power generation. The emissions inventory
 have greater statistical power to detect effects. More recent
 (END)
   ```
-  Explanation: Here, the text that says "power" is actually colored in red as seen in the screenshots below. The `--color` and `less -R` commands highlight the pattern that I want in red so it's easy to find and see what we are looking for.
+  Explanation: Here, the text that says "power" is actually colored in red as seen in the screenshots below. The `--color=always` option highlights the matches, then when we combine it with the output `less -R`, it allows us to scroll through the highlighted matches without losing the color. So, it colors the text I want in red so it's easy to find and see what we are looking for.
 
 Source:
 
