@@ -78,7 +78,7 @@ After:
 
 Source:
 
-https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+[GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
   2. 
   
@@ -98,7 +98,7 @@ https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 Source:
 
-https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+[GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
 ### Invert match with `-v`
 
@@ -428,7 +428,7 @@ https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 Source:
 
-https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+[GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
   2. 
   
@@ -458,7 +458,7 @@ and without updating.
 
 Source:
 
-https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+[GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
 ### Show line number with `-n`
 
@@ -474,7 +474,7 @@ https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 Source:
 
-https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+[GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
   2.
 
@@ -496,7 +496,7 @@ https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 Source:
 
-https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+[GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
 ### Highlight matches with `--color` and `less -R`
 
@@ -521,9 +521,9 @@ have greater statistical power to detect effects. More recent
 
 Source:
 
-https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+[GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
-https://linuxcommando.blogspot.com/2007/10/grep-with-color-output.html
+[Linux Commando](https://linuxcommando.blogspot.com/2007/10/grep-with-color-output.html)
   
 
   2.
@@ -547,9 +547,9 @@ power plant would be able to achieve 90% source-specific controls
 
 Source:
 
-https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+[GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
-https://linuxcommando.blogspot.com/2007/10/grep-with-color-output.html
+[Linux Commando](https://linuxcommando.blogspot.com/2007/10/grep-with-color-output.html)
 
 
 Screenshots with highlighted text:
