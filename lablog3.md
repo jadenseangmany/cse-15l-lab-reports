@@ -211,7 +211,8 @@ https://www.geeksforgeeks.org/grep-command-in-unixlinux/
   1. 
 
   ```
-  (base) rain@Rains-MacBook-Air Env_Prot_Agen % grep --color=always "power" tech_adden.txt | less -R
+  (base) rain@Rains-MacBook-Air Env_Prot_Agen % grep --color=always "power"
+tech_adden.txt | less -R
 In the United States, power generation is responsible for 63% of
 from power generation emissions include:
 environmental problems caused by power generation, there is a need
@@ -237,7 +238,8 @@ https://linuxcommando.blogspot.com/2007/10/grep-with-color-output.html
   2.
 
   ```
-  (base) rain@Rains-MacBook-Air Env_Prot_Agen % grep --color=always "%" nov1.txt | less -R
+  (base) rain@Rains-MacBook-Air Env_Prot_Agen % grep --color=always "%"
+nov1.txt | less -R
   consumers' electricity rates by as much as 50%, which we believe is
 During this time, gross domestic product has increased almost 160%.
 pollutants by 29%, while coal consumption has increased 77% and
