@@ -19,7 +19,7 @@ Here I chose the method "reversed" where it's supposed to reverse an array given
     assertArrayEquals(new int[]{3,2,1}, ArrayExamples.reversed(input1));
   }
 ```
-Here, the failure inducing input is really any value other than an input array of all zeroes, but I chose {1,2,3} as my failure inducing input.
+Here, the failure inducing input is really any value other than an input array of all zeroes or any array length that is not size 1, but I chose {1,2,3} as my failure inducing input.
 ### Input that does not induce a failure:
 ```
 @Test
@@ -54,6 +54,8 @@ After:
     return newArray;
   }
 ```
+
+The change is switching arr[i] to newArray[i],switching nerArray[arr.length - i - 1]; to arr[arr.length - i - 1]; (in line 4), and returning newArray instead of arr. The "before" code would just set all elements of `arr` to 0 because `newArray` is an array of zeroes. Now, the code actually iterates over `arr` and for each `i` it places `arr[arr.llength - i - 1` into `newArray[i]`, which reverses the order of elements from `arr` into `newArray`. `newArray`, which also does not modify the original array and returns the new array.
 ## Part 2: Researching Commands
 
 ### Search for multiple patterns with `-e`
@@ -78,7 +80,7 @@ After:
 
 Source:
 
-[GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
   2. 
   
@@ -98,7 +100,7 @@ Source:
 
 Source:
 
-[GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 ### Invert match with `-v`
 
@@ -126,309 +128,15 @@ Source:
             
             
                     countries.
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                    ferry.
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                independent.
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                    Angeles.
-            
-            
-            POST-CRISIS REFLECTION: AGENDA FOR 2000
-            
-                    home.
-            
-            
-            
-                did not.
-            
-            
-            
-            
-            
-                trip to the region.
-            
-            
-            
-            
-            
-            
-            
-                    counterterrorism.
-            
-            
-                    unit]."
-            
-            
-            Berger met twice with Tenet in April to try to resolve the dispute. The Deputies
-            
-                    frozen.
-            
-            
-            
-                terrorist funding.
-            
-            
-            
-            
-                    flows.
-            
-            
-            
-                of Congress.
-            
-            
-            Border Security
-            
-            They included 
-            
-                
-                        proceedings;
-                
-                        terrorism;
-                
-                
-            
-            
-                        origin.
-                
-            
-            
-            
-            
-            
-            
-                    risky.
-            
-            
-            
-            
-            
-            
-            
-            
-                    out.
-            
-            
-            
-            
-            
-            
-            
-            THE ATTACK ON THE USS COLE
-            
-            
-                    Aden.
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                more well-known.
-            
-            
-            
-            
-            
-            
-            
-                directed the bombing.
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            CHANGE AND CONTINUITY
-                president in 2001.
-            From the Old to the New
-            
-            
-            
-            
-                    process.
-            
-            
-            
-                the NSC.
-            
-            
-            
-                Counterterrorism Security Group functioned.
-            
-            
-            
-            
-            
-            
-            
-            
-                    responses." Before Vice President Cheney visited the
-                responsible" for the Cole.
-            
-            
-            
-                    this.
-            
-            
-                    CIA.
-            
-                the review very soon.
-            
-            
-                (NSPD) on terrorism.
-            
-            
-            
-            
-            
-                    terrorism.
-            
-            THE NEW ADMINISTRATION'S APPROACH
-            
-            
-            
-            
-                policy process did not follow through quickly enough.
-            
-            
-            
-                    2006.
-            
-                expressed it to her, Rice told us.
-            
-            
-            
-            
-            
-            
-            
-            
-                    concluded.
-            
-            
-                    victory.
-            
-            
-            
-            
-            
-                    Berger.
-            
-            
-            
-            
-            
-            
-            
-                rights to fly over neighboring countries.
-            
-            
-                this mission," Rice told us.
-            
-            
-            
-            
-            
-            
-                Robert Mueller, took office just before 9/11. The
-            
-            
-            
-            
-            
-                this concern.
-            
-            
-            
-                    he.
-            
-                moving vehicle.
-            
-                    herself.
-            
-                on these issues.
-            
-            
-                Jumper told us, problems with the equipment persisted. Nevertheless, the Air Force
-                    this."
-            
-            September 2001
-            
-            
-                be in order[.]"
-            
-            
-                Rice, Tenet, Rumsfeld, or someone else would give the order to fire.
-            
-                with little discussion.
-            
-                    work.
-            
-                spring of 2002.
-            
-            
-            
-            
-            
-            
-            
-            
+
+continues longer...
   ```
 
-  Explanation: Here, I used the `-v` option, which returns all the lines that do not match the pattern I provide. In this example, I provided the pattern "a", so grep returned all the lines that do not have the letter "a". This could be useful when looking for more broad strings that filters out things that we don't want.
+  Explanation: Here, the output was too long so I just only showed the first couple of lines. I used the `-v` option, which returns all the lines that do not match the pattern I provide. In this example, I provided the pattern "a", so grep returned all the lines that do not have the letter "a". This could be useful when looking for more broad strings that filters out things that we don't want.
 
 Source:
 
-[GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
   2. 
   
@@ -458,7 +166,7 @@ and without updating.
 
 Source:
 
-[GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 ### Show line number with `-n`
 
@@ -474,7 +182,7 @@ Source:
 
 Source:
 
-[GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
   2.
 
@@ -496,7 +204,7 @@ Source:
 
 Source:
 
-[GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 ### Highlight matches with `--color` and `less -R`
 
@@ -521,9 +229,9 @@ have greater statistical power to detect effects. More recent
 
 Source:
 
-[GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
-[Linux Commando](https://linuxcommando.blogspot.com/2007/10/grep-with-color-output.html)
+https://linuxcommando.blogspot.com/2007/10/grep-with-color-output.html
   
 
   2.
@@ -547,9 +255,9 @@ power plant would be able to achieve 90% source-specific controls
 
 Source:
 
-[GeeksForGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
-[Linux Commando](https://linuxcommando.blogspot.com/2007/10/grep-with-color-output.html)
+https://linuxcommando.blogspot.com/2007/10/grep-with-color-output.html
 
 
 Screenshots with highlighted text:
