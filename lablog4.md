@@ -18,7 +18,7 @@ Keys Pressed: `cd la`, `<tab><enter>`
 
 ### Step 6 (running tests)
 ![](images/bash_test.png)
-Here, I typed in `bash t` then pressed tab to autofill and save time, so it typed in the full command "`bash test.sh`".
+Here, I typed in `bash t` then pressed tab to autofill and save time, so it typed in the full command `bash test.sh`.
 
 Keys Pressed: `bash t`, `<tab><enter>`
 
