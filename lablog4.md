@@ -6,7 +6,7 @@ Keys pressed: `<up><up><up><enter>`
 
 ### Step 5 (git clone)
 ![](images/git_clone.png)
-For this, I just typed in `git clone` then pressed space and pasted `(CMD + V)` in the link that I copied from git hub.
+For this, I just typed in `git clone` then pressed space and pasted `CMD + V` in the link that I copied from git hub.
 
 Keys Pressed: `git clone`, `<space><CMD + V><enter>`
 
