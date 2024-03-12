@@ -12,7 +12,7 @@ Keys Pressed: `git clone`, `<space><CMD + V><enter>`
 
 ### Step 5.5 (CDing into directory)
 ![](images/cd_lab.png)
-Here, I had to CD into the directory that I git cloned to so I can access the files. I pressed `<tab>` so I could autofill the exact directory name, `cd lab4actualreport/`.
+Here, I had to `CD` into the directory that I git cloned to so I can access the files. I pressed `<tab>` after typing in `cd la` so I could autofill the exact directory name, `cd lab4actualreport/`.
 
 Keys Pressed: `cd la`, `<tab><enter>`
 
@@ -24,9 +24,9 @@ Keys Pressed: `bash t`, `<tab><enter>`
 
 ### Step 7 (editing tests)
 ![](images/vim.png)
-Here is where the actual vim editing begins. I typed in `vim Li` then pressed `<tab>` to save time and autofill to `vim ListExamples.java`. Then, I pressed `43J` which basically goes down 43 lines, then pressed `13L` which moves the cursor to the right 13 times, then pressed `R2` which replaces the character I selected to `2`, then typed `:x` which saves and exits vim. Those operations basically located the error that needed to be fixed, and fixed it through the replacement feature, `R`.
+Here is where the actual vim editing begins. I typed in `vim ListE` then pressed `<tab>` to save time and autofill to `vim ListExamples.java`. Then, I pressed `43J` which basically goes down 43 lines, then pressed `13L` which moves the cursor to the right 13 times, then pressed `R2` which replaces the character I selected to `2`, then typed `:x` which saves and exits vim. Those operations basically located the error that needed to be fixed, and fixed it through the replacement feature, `R`.
 
-Keys Pressed: `43J11LR2:x<enter>`
+Keys Pressed: `vim ListE <tab>`,`<enter>`,`43J11LR2:x<enter>`
 
 ### Step 8 (running tests)
 ![](images/test_pass.png)
@@ -36,8 +36,8 @@ Keys Pressed: `<up><up><enter>`
 
 ### Step 9 (commit)
 ![](images/git_commit.png)
-Here, I took the steps to commit the configured file to my github. I ran `git add Li` then pressed `<tab>` to autocomplete `git add ListExamples.java` which stages the changes for github to commit. Then I ran `git commit -m "commit message"` which is literally the only command where I actually had to type the whole thing in, but that just commits the changes. Then I pushed the changes by running the command `git push origin main` which is now the second command where I actually had to type the whole thing, and just pushes the changes to github.
+Here, I took the steps to commit the configured file to my github. I ran `git add ListE` then pressed `<tab>` to autocomplete `git add ListExamples.java` which stages the changes for github to commit. Then I ran `git commit -m "commit message"` which is literally the only command where I actually had to type the whole thing in, but that just commits the changes. Then I pushed the changes by running the command `git push origin main` which is now the second command where I actually had to type the whole thing, and just pushes the changes to github.
 
-Keys Pressed: `git add Li`,`<tab>`,`git commit -m "commit message"`,`git push origin main`
+Keys Pressed: `git add ListE`,`<tab>`,`<enter>`,`git commit -m "commit message"`,`git push origin main`,`<enter>`
 
 
