@@ -32,7 +32,7 @@ ArrayTests.class        LinkedListExample.java  lib
 ArrayTests.java         ListExamples.class      test.sh
 FileExample.class       ListExamples.java
 ```
-### Contents of each file before fixing the bug (I'm just gonna take the files that were edited, and were the bug lied in):
+### Contents of each file before fixing the bug (I'm just gonna take the files that were edited, and where the bug lied in):
 
 `ListExamples.java`:
 ```
@@ -111,3 +111,6 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 ```
 ### Description of what to edit to fix the bug
 The student had to go into `ListExamples.java` and edit the merge method at the bottom loop to iterate `index2` instead of `index1`, then they had to edit the filter method at the top from `result.add(0,s)` to `result.add(s)`.
+
+# Part 2: Reflection
+With our current technology of editors such as VS Code, I did not know `vim` existed and I thought it was really interesting on how people would edit code before modern editors existed. I also admit that I did not complete the entire vim tutorial, so by doing the vim lab and reading my classmates post, I realized that you could just do like `42L` if you wanted to go to the right 42 times instantly, rather than clicking `L` `42` times like I did initially. I also learned about other ways you could edit quickly, like using `R` to replace, and `X` to delete. Overall, I thought that `vim` is a pretty unique and interesting tool to use to edit files extremely quickly if you know which buttons to press, which was very helpful for one of the previous skill demos.
