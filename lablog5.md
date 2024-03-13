@@ -1,5 +1,4 @@
 # Part One (EdStem Conversation)
-![](images/part1.png)
 ![](images/part2.png)
 ![](images/part3.png)
 ![](images/part4.png)
